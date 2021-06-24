@@ -1,0 +1,160 @@
+:root {
+    --curso-blue: #21409a;
+    --curso-pink: #ef4060;
+}
+
+.color-curso-blue {
+    color: var(--curso-blue) !important;
+}
+
+.color-curso-pink {
+    color: var(--curso-pink) !important;
+}
+
+.bg-curso-blue {
+    background-color: var(--curso-blue) !important;
+}
+
+.bg-curso-pink {
+    background-color: var(--curso-pink) !important;
+}
+
+/* GRADIENTE PADRÃO:
+background: rgb(33,64,154);
+background: -moz-linear-gradient(30deg, rgba(33,64,154,1) 0%, rgba(239,64,96,1) 100%);
+background: -webkit-linear-gradient(30deg, rgba(33,64,154,1) 0%, rgba(239,64,96,1) 100%);
+background: linear-gradient(30deg, rgba(33,64,154,1) 0%, rgba(239,64,96,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#21409a",endColorstr="#ef4060",GradientType=1);
+*/
+
+#intro {
+    background: rgb(33, 64, 154);
+    background: -moz-linear-gradient(30deg, var(--curso-blue) 0%, var(--curso-pink) 100%);
+    background: -webkit-linear-gradient(30deg, var(--curso-blue) 0%, var(--curso-pink) 100%);
+    background: linear-gradient(30deg, var(--curso-blue) 0%, var(--curso-pink) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=var(--curso-blue), endColorstr=var(--curso-pink), GradientType=1);
+}
+
+#about .card-title {
+    font-weight: 600;
+}
+
+.icon-fixed {
+    position: absolute;
+    user-select: none;
+    top: 0;
+    opacity: 5%;
+}
+
+.icon-fixed.icon-fixed-right {
+    right: 10px;
+}
+
+.icon-fixed.icon-fixed-left {
+    left: 10px;
+    top: 20%;
+}
+
+.market-fixed-icons {
+    position: relative;
+    user-select: none;
+}
+
+.market-fixed-icons .svg-inline--fa {
+    position: absolute;
+    opacity: 10%;
+}
+
+.market-fixed-icons .fa-dollar-sign {
+    color: var(--curso-pink);
+    top: 5%;
+    left: 10%;
+}
+
+.market-fixed-icons .fa-calculator {
+    color: var(--curso-blue);
+    bottom: 0;
+    right: 5%;
+}
+
+.quanto-ganha p {
+    margin: .25rem .25rem 1rem;
+    width: fit-content;
+    padding: .5rem 2rem;
+    border: 2px solid var(--curso-pink);
+    border-radius: 2rem;
+}
+
+.galeria {
+    height: 300px;
+}
+
+.galeria .swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.galeria .swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.galeria .gallery-top {
+    height: 80%;
+    width: 100%;
+}
+
+.galeria .gallery-thumbs {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.galeria .gallery-thumbs .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.galeria .gallery-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+#interest-form {
+    max-width: 500px;
+}
+
+#interest-form .form-group {
+    margin-bottom: 2rem;
+}
+
+#interest-form .form-control {
+    background: none;
+    border-width: 0;
+    border-radius: 0;
+    border-bottom-width: 1px;
+    color: #fff;
+}
+
+#interest-form .form-control::placeholder {
+    color: #ffffffcc;
+}
+
+#interest-form .form-control:focus {
+    box-shadow: none;
+    border-color: initial;
+}
+
+#interest-form sup {
+    color: var(--warning);
+}
+
+#faq .pergunta h4::before {
+    content: "- ";
+}
+
+#faq .pergunta p, #faq .obs {
+    font-size: .9rem;
+}

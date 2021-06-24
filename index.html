@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>UCS Marketplace</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,700;0,900;1,100;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/bootstrap-custom.min.css" />
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/pages/home.css" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <svg id="fader"></svg>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html" title="UCS Marketplace - Início">
+            <img src="img/logo-branco.png" height="30" alt="UCS Marketplace" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Habilitar menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="form-inline mr-auto mt-3 mt-sm-0" id="form-pesquisa-nav">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar..." aria-label="Pesquisar por produtos e serviços" />
+                <button class="btn btn-default my-0" type="submit">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                </button>
+            </form>
+            <ul class="navbar-nav my-2 my-lg-0" style="font-weight: 600;">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Início <span class="sr-only">(atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="loja.html">Loja</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Ajuda</a>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                    <a class="nav-link btn btn-warning px-3 ml-0 ml-sm-4 mt-2 mt-sm-0" style="font-weight: 600" href="mochila.html" title="Minha mochila"><i class="svg-backpack" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="inicio">
+
+        <section class="cover text-white text-center d-flex flex-column justify-content-center">
+            <h1 class="mb-2 mt-5 pt-5 wow fadeInUp">
+                Extensões, livros, aluguel de infraestrutura e muito mais!
+            </h1>
+            <p class="lead wow fadeInUp">
+                O UCS Marketplace chegou para reunir todos os produtos e serviços que a universidade mais inovadora do Brasil oferece!
+            </p>
+            <div class="container my-5">
+                <div class="row">
+                    <div class="col-sm-4 d-none d-sm-block">
+                        <img src="img/super-1.jpg" alt="Produto Super-destaque" title="Cursos EAD" class="img-thumbnail d-block ml-auto" />
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="img/super-2.jpg" alt="Produto Super-destaque" title="Produtos da UCS Livraria" class="img-thumbnail d-block mx-auto" />
+                    </div>
+                    <div class="col-sm-4 d-none d-sm-block">
+                        <img src="img/super-3.jpg" alt="Produto Super-destaque" title="Aluguel de Infraestrutura" class="img-thumbnail d-block mr-auto" />
+                    </div>
+                </div>
+            </div>
+            <p class="lead mx-4">
+                <a class="btn btn-primary btn-lg" href="loja.html" role="button">Confira todos os nossos produtos e serviços</a>
+            </p>
+        </section>
+
+        <section class="text-center mb-5 mt-3 mx-3 py-4">
+            <h3 class="h2">Produtos e serviços em destaque</h3>
+            <div class="swiper-container pt-4" id="swiper-destaques">
+                <div class="swiper-wrapper">
+                    <a href="detalheCurso.html" class="swiper-slide text-center text-decoration-none text-muted pb-4">
+                        <img src="img/destaque-1.jpg" alt="Produto em destaque" class="img-thumbnail d-block mx-auto mb-3 w-100" />
+                        <h5>LGPD nas Organizações: O Essencial da Nova Lei...</h5>
+                        <p><del class="text-black-50">R$ 149,00</del> R$ 134,00</p>
+                    </a>
+                    <a href="detalheLivro.html" class="swiper-slide text-center text-decoration-none text-muted pb-4">
+                        <img src="img/destaque-2.jpg" alt="Produto em destaque" class="img-thumbnail d-block mx-auto mb-3 w-100" />
+                        <h5>Kit 4 livros de Yuval Noah Harari</h5>
+                        <p><del class="text-black-50">R$ 129,90</del> R$ 99,90</p>
+                    </a>
+                    <a href="#" class="swiper-slide text-center text-decoration-none text-muted pb-4">
+                        <img src="img/destaque-3.jpg" alt="Produto em destaque" class="img-thumbnail d-block mx-auto mb-3 w-100" />
+                        <h5>Aluguel Sala Auditório Florense</h5>
+                        <p>Desconto de até 30%!</p>
+                    </a>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="text-center bg-light py-4 border-top border-bottom wow fadeInUp">
+            <div class="my-5 mx-auto w-75">
+                <h2 class="display-4">Sobre a UCS</h2>
+                <p class="my-4">Criada em 1967, a Universidade de Caxias do Sul é a mais antiga instituição de Ensino Superior da região e foi construída pelo esforço coletivo da comunidade.</p>
+                <a class="btn btn-warning btn-lg px-4" data-fslightbox data-type="youtube" href="https://www.youtube.com/watch?v=UGd0JhAs-nA" role="button"><i class="fab fa-youtube" aria-hidden="true"></i> Assista nosso vídeo institucional</a>
+            </div>
+        </section>
+
+        <section class="m-3 m-sm-5">
+            <h2 class="sr-only">Outros produtos</h2>
+            <div class="row">
+                <div class="col-sm-4 mb-4 mb-sm-0 wow fadeInUp" data-wow-delay=".2s">
+                    <a href="#" class="text-decoration-none text-muted">
+                        <img src="https://via.placeholder.com/480x661" alt="Produto destaque da categoria" class="img-thumbnail d-block mx-auto mb-3 w-100" />
+                        <span class="float-right">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </span>
+                        <h5>NOME DO PRODUTO</h5>
+                        <p>R$ 300</p>
+                    </a>
+                </div>
+                <div class="col-sm-8">
+                    <div class="row">
+                        <div class="col-sm-6 mb-4 mb-sm-0 wow fadeInUp" data-wow-delay=".4s">
+                            <a href="#" class="text-decoration-none text-muted">
+                                <img src="https://via.placeholder.com/854x480" alt="Produto destaque da categoria" class="img-thumbnail d-block mx-auto mb-3 w-100" />
+                                <span class="float-right">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </span>
+                                <h5>NOME DO PRODUTO</h5>
+                                <p>R$ 300</p>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 mb-4 mb-sm-0 wow fadeInUp" data-wow-delay=".6s">
+                            <a href="#" class="text-decoration-none text-muted">
+                                <img src="https://via.placeholder.com/854x480" alt="Produto destaque da categoria" class="img-thumbnail d-block mx-auto mb-3 w-100" />
+                                <span class="float-right">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </span>
+                                <h5>NOME DO PRODUTO</h5>
+                                <p>R$ 300</p>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 mb-4 mb-sm-0 wow fadeInUp" data-wow-delay=".8s">
+                            <a href="#" class="text-decoration-none text-muted">
+                                <img src="https://via.placeholder.com/854x480" alt="Produto destaque da categoria" class="img-thumbnail d-block mx-auto mb-3 w-100" />
+                                <span class="float-right">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </span>
+                                <h5>NOME DO PRODUTO</h5>
+                                <p>R$ 300</p>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 mb-4 mb-sm-0 wow fadeInUp" data-wow-delay="1s">
+                            <a href="#" class="text-decoration-none text-muted">
+                                <img src="https://via.placeholder.com/854x480" alt="Produto destaque da categoria" class="img-thumbnail d-block mx-auto mb-3 w-100" />
+                                <span class="float-right">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </span>
+                                <h5>NOME DO PRODUTO</h5>
+                                <p>R$ 300</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-light p-4 border-top text-center text-sm-left wow fadeInUp">
+            <div class="my-4 mx-3">
+                <h2 class="display-4">Newsletter</h2>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p class="lead">Assine nossa newsletter e receba em seu e-mail novidades e descontos exclusivos em produtos e serviços no site!</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <form class="form-inline mt-3 mt-sm-0">
+                            <div class="form-group mx-sm-3 mb-2 flex-grow-1">
+                                <label for="email-news" class="sr-only">Endereço de e-mail</label>
+                                <input type="email" class="form-control w-100" id="email-news" placeholder="Endereço de e-mail" required>
+                            </div>
+                            <button type="submit" onsubmit="event.preventDefault(); return false;" class="btn btn-primary mx-auto mx-sm-0 mb-2 px-sm-3">Inscrever-se</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-light border-top">
+        <div class="row m-3 mt-4">
+            <div class="col-sm-4">
+                <img src="img/ucs-logo-rodape.png" alt="Universidade de Caxias do Sul" title="Universidade de Caxias do Sul" class="w-25 mr-auto border-bottom pb-3 mb-3">
+                <h6 class="text-black-50">Campus-sede:</h6>
+                <address class="h6 text-black-50">Rua Francisco Getúlio Vargas, 1130<br>
+                    CEP 95070-560 - Caxias do Sul</address>
+            </div>
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <p class="lead text-uppercase">Menu Principal</p>
+                        <a href="index.html" class="d-block mb-2 text-decoration-none text-muted">Início</a>
+                        <a href="index.html" class="d-block mb-2 text-decoration-none text-muted">Sobre</a>
+                        <a href="loja.html" class="d-block mb-2 text-decoration-none text-muted">Loja</a>
+                        <a href="index.html" class="d-block mb-2 text-decoration-none text-muted">Ajuda</a>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <p class="lead text-uppercase">A UCS</p>
+                        <a href="https://www.ucs.br/" rel="external" class="d-block mb-2 text-decoration-none text-muted">Site</a>
+                        <a href="https://www.ucs.br/site/ouvidoria/" rel="external" class="d-block mb-2 text-decoration-none text-muted">Ouvidoria</a>
+                        <a href="https://www.ucs.br/site/trabalhe-na-ucs/" rel="external" class="d-block mb-2 text-decoration-none text-muted">Trabalhe na UCS</a>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <p class="lead text-uppercase">Categorias</p>
+                        <a href="loja.html" class="d-block mb-2 text-decoration-none text-muted">Categoria 1</a>
+                        <a href="loja.html" class="d-block mb-2 text-decoration-none text-muted">Categoria 2</a>
+                        <a href="loja.html" class="d-block mb-2 text-decoration-none text-muted">Categoria 3</a>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <p class="lead text-uppercase">Redes Sociais</p>
+                        <a href="https://www.facebook.com/ucsoficial/" class="d-block mb-2 text-decoration-none text-muted">Facebook</a>
+                        <a href="https://twitter.com/ucs_oficial/" class="d-block mb-2 text-decoration-none text-muted">Twitter</a>
+                        <a href="https://instagram.com/ucs_oficial" class="d-block mb-2 text-decoration-none text-muted">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-primary text-white text-center p-1 border-top">
+            &copy; Universidade de Caxias do Sul 2021
+        </div>
+    </footer>
+
+    <script src="fontawesome/js/fontawesome.min.js"></script>
+    <script src="fontawesome/js/all.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/fslightbox.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <script src="js/app-footer.js"></script>
+    <script src="js/pages/home.js"></script>
+</body>
+
+
+</html>

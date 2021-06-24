@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Todos os produtos e serviços - UCS Marketplace</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,700;0,900;1,100;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/bootstrap-custom.min.css" />
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/pages/loja.css" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <svg id="fader"></svg>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html" title="UCS Marketplace - Início">
+            <img src="img/logo-branco.png" height="30" alt="UCS Marketplace" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Habilitar menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="form-inline mr-auto mt-3 mt-sm-0" id="form-pesquisa-nav">
+                <!-- <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar..." aria-label="Pesquisar por produtos e serviços" />
+                <button class="btn btn-default my-0" type="submit">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                </button> -->
+            </form>
+            <ul class="navbar-nav my-2 my-lg-0" style="font-weight: 600;">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Sobre</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="loja.html">Loja <span class="sr-only">(atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Ajuda</a>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                    <a class="nav-link btn btn-warning px-3 ml-0 ml-sm-4 mt-2 mt-sm-0" style="font-weight: 600" href="#" title="Minha mochila"><i class="svg-backpack" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="jumbotron rounded-0 bg-primary text-white text-center">
+            <h1 class="display-4 mt-5 mb-3">UCS Marketplace</h1>
+            <form id="form-pesquisa-loja" class="d-block mx-auto" style="max-width: 550px">
+                <div class="input-group mb-5 wow fadeInUp">
+                    <input type="text" class="form-control mb-2" placeholder="O que você está procurando?" aria-label="Pesquise por produtos e serviços do UCS Marketplace" aria-describedby="helpBlock" autofocus="">
+                    <div class="input-group-append mb-2">
+                        <button class="btn btn-warning" type="button" id="button-search-loja"><i class="fas fa-search" aria-hidden="true"></i> <span class="sr-only">Pesquisar</span></button>
+                    </div>
+                    <small id="helpBlock" class="form-text text-left mx-2">
+                        <i class="fas fa-info-circle" aria-hidden="true"></i> Você pode procurar tanto pelo nome de um produto, como um livro ou um curso, quanto por uma categoria específica, como cursos de extensão ou livros didáticos.
+                    </small>
+                </div>
+            </form>
+        </div>
+    </header>
+
+    <main id="loja" class="container-fluid my-5">
+        <div class="row">
+            <aside class="col-sm-3 border-right px-4" id="filtros">
+                <div class="form-group">
+                    <label for="order-filter">Ordenar por...</label>
+                    <select class="form-control" id="order-filter">
+                        <option>Em destaque</option>
+                        <option>Ordem alfabética (A-Z)</option>
+                        <option>Ordem alfabética (Z-A)</option>
+                        <option>Mais recentes</option>
+                        <option>Mais antigos</option>
+                        <option>Menor preço para o maior</option>
+                        <option>Maior preço para o menor</option>
+                    </select>
+                </div>
+                <p class="lead mt-4">Categorias</p>
+                <div class="list-group">
+                    <a href="loja.html" class="list-group-item list-group-item-action active">Cursos de Extensão</a>
+                    <a href="loja.html" class="list-group-item list-group-item-action">Livros</a>
+                    <a href="loja.html" class="list-group-item list-group-item-action">Material Escolar</a>
+                    <a href="loja.html" class="list-group-item list-group-item-action">Aluguel de Infraestrutura</a>
+                </div>
+                <p class="lead mt-4">Áreas</p>
+                <div class="list-group">
+                    <a href="loja.html" class="list-group-item list-group-item-action"><i class="fas fa-circle fa-fw" aria-hidden="true" style="color: var(--blue);"></i> Administração e Negócios</a>
+                    <a href="loja.html" class="list-group-item list-group-item-action"><i class="fas fa-circle fa-fw" aria-hidden="true" style="color: var(--purple);"></i> Artes, Arquitetura e Design</a>
+                    <a href="loja.html" class="list-group-item list-group-item-action"><i class="fas fa-circle fa-fw" aria-hidden="true" style="color: var(--green);"></i> Ciências Agrárias e Biológicas</a>
+                    <a href="loja.html" class="list-group-item list-group-item-action"><i class="fas fa-circle fa-fw" aria-hidden="true" style="color: var(--teal);"></i> Ciências Econômicas e Contábeis</a>
+                    <a href="loja.html" class="list-group-item list-group-item-action"><i class="fas fa-circle fa-fw" aria-hidden="true" style="color: var(--yellow);"></i> Ciências Exatas e Engenharias</a>
+                    <a href="loja.html" class="list-group-item list-group-item-action"><i class="fas fa-circle fa-fw" aria-hidden="true" style="color: var(--red);"></i> Ciências Humanas</a>
+                    <a href="loja.html" class="list-group-item list-group-item-action"><i class="fas fa-circle fa-fw" aria-hidden="true" style="color: var(--orange);"></i> Ciências Jurídicas</a>
+                    <a href="loja.html" class="list-group-item list-group-item-action"><i class="fas fa-circle fa-fw" aria-hidden="true" style="color: var(--red);"></i> Ciências da Saúde</a>
+                    <a href="loja.html" class="list-group-item list-group-item-action"><i class="fas fa-circle fa-fw" aria-hidden="true" style="color: var(--indigo);"></i> Comunicação Social</a>
+                    <a href="loja.html" class="list-group-item list-group-item-action"><i class="fas fa-circle fa-fw" aria-hidden="true" style="color: var(--blue);"></i> Hospitalidade e Gastronomia</a>
+                    <a href="loja.html" class="list-group-item list-group-item-action"><i class="fas fa-circle fa-fw" aria-hidden="true" style="color: var(--cyan);"></i> Informática</a>
+                    <a href="loja.html" class="list-group-item list-group-item-action"><i class="fas fa-circle fa-fw" aria-hidden="true" style="color: var(--orange);"></i> Letras e Linguística</a>
+                </div>
+                <p class="lead mt-4">Valor Máximo</p>
+                <div class="form-group">
+                    <input type="range" class="form-control-range" id="filtro-valor-maximo" min="75" max="450" step="5" value="300">
+                    <div>
+                        <small class="float-left user-select-none">R$ 75</small>
+                        <small class="float-right user-select-none">R$ 450</small>
+                    </div>
+                </div>
+            </aside>
+            <section class="col-sm-9 px-4" id="product-list">
+                <small class="d-block mb-4">8 resultados encontrados</small>
+                <div class="row">
+                    <div class="col-6 col-sm-4 product-item">
+                        <a href="detalheCurso.html" class="card w-100 h-100 text-decoration-none text-body bg-light" title="Curso de Extensão: Coaching Profissional - Online Síncrono">
+                            <img class="card-img-top pb-2" src="img/curso-loja.jpg" alt="Curso de Extensão" style="background-color: var(--blue);">
+                            <div class="card-body d-flex flex-column p-3">
+                                <h5 class="card-title text-three-dots two-line">Coaching Profissional - Online Síncrono</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Referência: CE001</h6>
+                                <p class="card-text">
+                                    <small><del>R$ 149,00</del></small><br>
+                                    <b>R$ 134,00</b>
+                                </p>
+                                <button class="btn btn-primary btn-block btn-know-more mt-auto">Saiba mais</button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <section class="p-4 border-top text-center text-sm-left wow fadeInUp">
+        <div class="my-4 mx-3">
+            <h2 class="display-4">Newsletter</h2>
+            <div class="row">
+                <div class="col-sm-6">
+                    <p class="lead">Assine nossa newsletter e receba em seu e-mail novidades e descontos exclusivos em produtos e serviços no site!</p>
+                </div>
+                <div class="col-sm-6">
+                    <form class="form-inline mt-3 mt-sm-0">
+                        <div class="form-group mx-sm-3 mb-2 flex-grow-1">
+                            <label for="email-news" class="sr-only">Endereço de e-mail</label>
+                            <input type="email" class="form-control w-100" id="email-news" placeholder="Endereço de e-mail" required>
+                        </div>
+                        <button type="submit" onsubmit="event.preventDefault(); return false;" class="btn btn-primary mx-auto mx-sm-0 mb-2 px-sm-3">Inscrever-se</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-light border-top">
+        <div class="row m-3 mt-4">
+            <div class="col-sm-4">
+                <img src="img/ucs-logo-rodape.png" alt="Universidade de Caxias do Sul" title="Universidade de Caxias do Sul" class="w-25 mr-auto border-bottom pb-3 mb-3">
+                <h6 class="text-black-50">Campus-sede:</h6>
+                <address class="h6 text-black-50">Rua Francisco Getúlio Vargas, 1130<br>
+                    CEP 95070-560 - Caxias do Sul</address>
+            </div>
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <p class="lead text-uppercase">Menu Principal</p>
+                        <a href="index.html" class="d-block mb-2 text-decoration-none text-muted">Início</a>
+                        <a href="index.html" class="d-block mb-2 text-decoration-none text-muted">Sobre</a>
+                        <a href="loja.html" class="d-block mb-2 text-decoration-none text-muted">Loja</a>
+                        <a href="index.html" class="d-block mb-2 text-decoration-none text-muted">Ajuda</a>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <p class="lead text-uppercase">A UCS</p>
+                        <a href="https://www.ucs.br/" rel="external" class="d-block mb-2 text-decoration-none text-muted">Site</a>
+                        <a href="https://www.ucs.br/site/ouvidoria/" rel="external" class="d-block mb-2 text-decoration-none text-muted">Ouvidoria</a>
+                        <a href="https://www.ucs.br/site/trabalhe-na-ucs/" rel="external" class="d-block mb-2 text-decoration-none text-muted">Trabalhe na UCS</a>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <p class="lead text-uppercase">Categorias</p>
+                        <a href="loja.html" class="d-block mb-2 text-decoration-none text-muted">Categoria 1</a>
+                        <a href="loja.html" class="d-block mb-2 text-decoration-none text-muted">Categoria 2</a>
+                        <a href="loja.html" class="d-block mb-2 text-decoration-none text-muted">Categoria 3</a>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <p class="lead text-uppercase">Redes Sociais</p>
+                        <a href="https://www.facebook.com/ucsoficial/" class="d-block mb-2 text-decoration-none text-muted">Facebook</a>
+                        <a href="https://twitter.com/ucs_oficial/" class="d-block mb-2 text-decoration-none text-muted">Twitter</a>
+                        <a href="https://instagram.com/ucs_oficial" class="d-block mb-2 text-decoration-none text-muted">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-primary text-white text-center p-1 border-top">
+            &copy; Universidade de Caxias do Sul 2021
+        </div>
+    </footer>
+
+    <script src="fontawesome/js/fontawesome.min.js"></script>
+    <script src="fontawesome/js/all.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/fslightbox.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <script src="js/app-footer.js"></script>
+    <script src="js/pages/loja.js"></script>
+</body>
+
+
+</html>

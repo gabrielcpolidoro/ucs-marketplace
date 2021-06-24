@@ -1,0 +1,6 @@
+.cover {
+    height: 80vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url('../../img/cover.jpg');
+    background-position: center top;
+    background-size: cover;
+}

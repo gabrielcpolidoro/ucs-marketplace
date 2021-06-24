@@ -1,0 +1,32 @@
+.product-image-mochila {
+    float: left;
+    width: 120px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+:root {
+    --curso-blue: #21409a;
+    --curso-pink: #ef4060;
+}
+
+.color-curso-blue {
+    color: var(--curso-blue) !important;
+}
+
+.color-curso-pink {
+    color: var(--curso-pink) !important;
+}
+
+.bg-curso-blue {
+    background-color: var(--curso-blue) !important;
+}
+
+.bg-curso-pink {
+    background-color: var(--curso-pink) !important;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
